@@ -15,18 +15,34 @@
   animation-range-end: contain;
 }
 
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
 .slide[data-slide="left"] {
   animation: slide-left normal;
   animation-timeline: view();
   animation-range-start: 0px;
-  animation-range-end: 550px;
+  animation-range-end: 500px;
 }
 
 .slide[data-slide="right"] {
   animation: slide-right normal;
   animation-timeline: view();
   animation-range-start: 0px;
-  animation-range-end: 550px;
+  animation-range-end: 500px;
 }
 
 .overlay {
