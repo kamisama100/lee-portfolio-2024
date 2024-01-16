@@ -31,64 +31,16 @@
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
-.slide[data-slide="left"] {
-  animation: slide-left normal;
-  animation-timeline: view();
-  animation-range-start: 0px;
-  animation-range-end: 500px;
-}
-
-.slide[data-slide="right"] {
-  animation: slide-right normal;
-  animation-timeline: view();
-  animation-range-start: 0px;
-  animation-range-end: 500px;
+#mouse-follower {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(248, 248, 248, 0.05), rgba(17, 24, 39, 0.01));
+  box-shadow: 0 0 20px 100px rgba(248, 248, 248, 0.01);
 }
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
-}
-
-@keyframes slide-up {
-  0% {
-    opacity: 0;
-    transform: translateY(300px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slide-up-2 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100;
-  }
-}
-
-@keyframes slide-left {
-  from {
-    opacity: 0;
-    transform: translateX(-500px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slide-right {
-  from {
-    opacity: 0;
-    transform: translateX(500px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 html,

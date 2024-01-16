@@ -8,334 +8,396 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <main
-      class="bg-gray-900 md:px-14 lg:px-20 xl:px-32 py-16 lg:py-20 text-slate-300 text-lg overflow-x-clip"
-    >
-      <div
-        class="flex flex-col lg:flex-row gap-y-20 lg:gap-y-0 justify-between max-w-[1480px] mx-auto"
+    <div class="relative h-fit overflow-y-clip">
+      <main
+        class="bg-gray-900 px-8 md:px-14 lg:px-20 xl:px-32 py-12 md:py-16 lg:py-20 text-slate-300 text-lg overflow-x-clip"
       >
-        <header class="h-fit lg:h-[calc(100lvh-160px)] flex-1 lg:sticky top-16 lg:top-20 left-0">
-          <div class="flex flex-col gap-y-7 lg:gap-y-0 justify-between h-full">
-            <div class="flex flex-col gap-20">
-              <div class="flex flex-col gap-3">
-                <div class="flex flex-col">
-                  <h1 class="text-[3rem] leading-normal font-extrabold">Lee</h1>
-                  <h3 class="text-2xl font-medium">Front-End Developer</h3>
+        <div
+          class="flex flex-col lg:flex-row gap-y-20 lg:gap-y-0 justify-between max-w-[1480px] mx-auto"
+        >
+          <header class="h-fit lg:h-[calc(100lvh-160px)] flex-1 lg:sticky top-16 lg:top-20 left-0">
+            <div class="flex flex-col gap-y-7 lg:gap-y-0 justify-between h-full">
+              <div class="flex flex-col gap-20">
+                <div class="flex flex-col gap-3">
+                  <div class="flex flex-col">
+                    <h1 class="text-[3rem] leading-normal font-extrabold">Lee</h1>
+                    <h3 class="text-2xl font-medium">Front-End Developer</h3>
+                  </div>
+                  <p class="text-neutral-400 w-[50%]">
+                    I translate designs to pixel perfect working code.
+                  </p>
                 </div>
-                <p class="text-neutral-400 w-[50%]">
-                  I translate designs to pixel perfect working code.
-                </p>
-              </div>
 
-              <div
-                id="section-buttons"
-                class="hidden lg:flex flex-col items-start gap-6 text-sm font-semibold text-neutral-500 *:tracking-widest *:flex *:flex-row *:gap-2 *:items-center"
-              >
-                <a href="#about-me" class="group hover:text-slate-300">
-                  <div
-                    class="transition-all duration-150 bg-neutral-500 h-[0.06785rem] w-8 group-hover:w-16 group-hover:bg-slate-200"
-                  ></div>
-                  ABOUT
-                </a>
-                <a href="#experience" class="group hover:text-slate-300">
-                  <div
-                    class="transition-all duration-150 bg-neutral-500 h-[0.06785rem] w-8 group-hover:w-16 group-hover:bg-slate-200"
-                  ></div>
-                  EXPERIENCE
-                </a>
-                <a href="#projects" class="group hover:text-slate-300">
-                  <div
-                    class="transition-all duration-150 bg-neutral-500 h-[0.06785rem] w-8 group-hover:w-16 group-hover:bg-slate-200"
-                  ></div>
-                  PROJECTS
-                </a>
-              </div>
-            </div>
-
-            <div class="flex flex-row gap-4">
-              <a class="h-fit w-fit rounded-full" href="https://github.com/kamisama100/">
-                <img class="w-8 h-8" src="images/icons/github.png" alt="github" />
-              </a>
-              <a class="h-fit w-fit rounded-full" href="https://github.com/kamisama100/">
-                <img class="w-8 h-8" src="images/icons/facebook.png" alt="facebook" />
-              </a>
-              <a class="bg-transparent h-fit w-fit" href="https://github.com/kamisama100/">
-                <img class="w-8 h-8" src="images/icons/linkedIn.png" alt="linkedIn" />
-              </a>
-            </div>
-          </div>
-        </header>
-
-        <div class="flex-1">
-          <div class="flex flex-col gap-y-32 justify-start items-start">
-            <section
-              id="about-me"
-              class="flex flex-col gap-4 lg:gap-6 pt-4 leading-8 text-neutral-400"
-            >
-              <div class="lg:hidden sticky top-0 leading-none py-6 bg-blur">
-                <h3 class="text-slate-300 text-balance tracking-wider font-bold relative z-40">
-                  ABOUT
-                </h3>
-                <div class="absolute-center bg-blur w-full h-full backdrop-blur-sm"></div>
-              </div>
-              <p>
-                Hey there! I started working as a
-                <span class="text-slate-300 font-bold">front-end developer</span> last year at a
-                <span class="text-slate-300 font-bold">cool startup</span>. It's been awesome using
-                all the stuff I've learned about
-                <span class="text-slate-300 font-bold">coding.</span>
-              </p>
-              <p>
-                I've tried out lots of different tools, but my favorites are
-                <span class="text-slate-300 font-bold">Vanilla JavaScript</span> and
-                <span class="text-slate-300 font-bold">Tailwind</span>. I believe that my
-                understanding of concepts in
-                <span class="text-slate-300 font-bold"> JavaScript</span> allows me to handle
-                anything new that comes my way.
-              </p>
-              <p>
-                I'm all about <span class="text-slate-300 font-bold">learning new things</span> and
-                staying <span class="text-slate-300 font-bold">up-to-date</span> with the
-                <span class="text-slate-300 font-bold">latest in tech.</span> Excited to keep
-                getting better at making
-                <span class="text-slate-300 font-bold">awesome websites!</span>
-              </p>
-            </section>
-
-            <section id="experience" class="relative flex flex-col gap-4">
-              <div class="lg:hidden sticky top-0 leading-none py-6 bg-blur z-50">
-                <h3 class="text-slate-300 text-balance tracking-wider font-bold relative z-40">
-                  EXPERIENCE
-                </h3>
-                <div class="absolute-center bg-blur w-full h-full backdrop-blur-sm"></div>
-              </div>
-              <div class="group relative w-full h-auto">
                 <div
-                  class="flex flex-row gap-24 lg:gap-8 items-start w-full h-auto pointer-events-auto"
+                  id="section-buttons"
+                  class="hidden lg:flex flex-col items-start gap-6 text-sm font-semibold text-neutral-500 *:tracking-widest *:flex *:flex-row *:gap-2 *:items-center"
                 >
-                  <span class="text-sm text-neutral-500 font-bold min-w-28">2023 — 2024</span>
-                  <div class="flex flex-col gap-2 flex-1">
+                  <a href="#about-me" class="group hover:text-slate-300">
+                    <div
+                      class="transition-all duration-150 bg-neutral-500 h-[0.06785rem] w-8 group-hover:w-16 group-hover:bg-slate-200"
+                    ></div>
+                    ABOUT
+                  </a>
+                  <a href="#experience" class="group hover:text-slate-300">
+                    <div
+                      class="transition-all duration-150 bg-neutral-500 h-[0.06785rem] w-8 group-hover:w-16 group-hover:bg-slate-200"
+                    ></div>
+                    EXPERIENCE
+                  </a>
+                  <a href="#projects" class="group hover:text-slate-300">
+                    <div
+                      class="transition-all duration-150 bg-neutral-500 h-[0.06785rem] w-8 group-hover:w-16 group-hover:bg-slate-200"
+                    ></div>
+                    PROJECTS
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex flex-row gap-4">
+                <a
+                  class="h-fit w-fit rounded-full"
+                  target="_blank"
+                  href="https://github.com/kamisama100/"
+                >
+                  <img class="w-8 h-8" src="images/icons/github.png" alt="github" />
+                </a>
+                <a
+                  class="h-fit w-fit rounded-full"
+                  target="_blank"
+                  href="https://www.facebook.com/leejohnd.delute/"
+                >
+                  <img class="w-8 h-8" src="images/icons/facebook.png" alt="facebook" />
+                </a>
+                <a
+                  class="bg-transparent h-fit w-fit"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/lee-johnder-delute-863293212/"
+                >
+                  <img class="w-8 h-8" src="images/icons/linkedIn.png" alt="linkedIn" />
+                </a>
+              </div>
+            </div>
+          </header>
+
+          <div class="flex-1">
+            <div class="flex flex-col gap-y-16 md:gap-y-28 lg:gap-y-32 justify-start items-start">
+              <section
+                id="about-me"
+                class="flex flex-col gap-4 lg:gap-6 pt-4 leading-8 text-neutral-400"
+              >
+                <div class="lg:hidden sticky top-0 leading-none py-6 bg-blur">
+                  <h3 class="text-slate-300 text-balance tracking-wider font-bold relative z-40">
+                    ABOUT
+                  </h3>
+                  <div class="absolute-center w-[120%] bg-blur h-full backdrop-blur-sm"></div>
+                </div>
+                <p>
+                  Hey there! I started working as a
+                  <span class="text-slate-300 font-bold">front-end developer</span> last year at a
+                  <span class="text-slate-300 font-bold">cool startup</span>. It's been awesome
+                  using all the stuff I've learned about
+                  <span class="text-slate-300 font-bold">coding.</span>
+                </p>
+                <p>
+                  I've tried out lots of different tools, but my favorites are
+                  <span class="text-slate-300 font-bold">Vanilla JavaScript</span> and
+                  <span class="text-slate-300 font-bold">Tailwind</span>. I believe that my
+                  understanding of concepts in
+                  <span class="text-slate-300 font-bold"> JavaScript</span> allows me to handle
+                  anything new that comes my way.
+                </p>
+                <p>
+                  I'm all about
+                  <span class="text-slate-300 font-bold">learning new things</span> and staying
+                  <span class="text-slate-300 font-bold">up-to-date</span> with the
+                  <span class="text-slate-300 font-bold">latest in tech.</span> Excited to keep
+                  getting better at making
+                  <span class="text-slate-300 font-bold">awesome websites!</span>
+                </p>
+              </section>
+
+              <section id="experience" class="relative flex flex-col gap-4">
+                <div class="lg:hidden sticky top-0 leading-none py-6 bg-blur z-50">
+                  <h3 class="text-slate-300 text-balance tracking-wider font-bold relative z-40">
+                    EXPERIENCE
+                  </h3>
+                  <div class="absolute-center bg-blur w-[120%] h-full backdrop-blur-sm"></div>
+                </div>
+                <div class="group relative w-full h-auto">
+                  <div
+                    class="flex flex-col md:flex-row gap-4 md:gap-24 lg:gap-8 items-start w-full h-auto pointer-events-auto"
+                  >
+                    <span class="text-sm text-neutral-500 font-bold min-w-28">2023 — 2024</span>
+                    <div class="flex flex-col gap-2 flex-1">
+                      <a
+                        target="_blank"
+                        href="https://www.bgdy.com"
+                        class="text-lg leading-none font-bold w-fit hover:text-teal-500"
+                      >
+                        Front-End Developer · BGDY
+                      </a>
+                      <p class="text-neutral-400 text-base leading-7">
+                        As part of a startup company offering multiple services, web application
+                        development was one of my responsibilities. I collaborated with designers, a
+                        project manager, and backend developers to create exceptional web
+                        applications.
+                      </p>
+                      <div
+                        class="flex flex-row gap-4 lg:gap-8 flex-wrap text-sm text-center text-teal-500 font-bold mt-2"
+                      >
+                        <span>HTML</span>
+                        <span>JavaScript</span>
+                        <span>Sveltekit</span>
+                        <span>Tailwind</span>
+                        <span>Go</span>
+                        <span>Hugo</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a
+                    target="_blank"
+                    href="https://www.bgdy.com"
+                    class="opacity-0 group-hover:opacity-100 absolute-center w-[calc(100%+68px)] h-[calc(100%+48px)] z-0 ring-1 ring-teal-800 bg-transparent rounded-md hidden lg:block"
+                  ></a>
+                </div>
+
+                <a
+                  class="group flex flex-row gap-2 items-center mt-10 font-bold tracking-wide w-fit hover:text-teal-500"
+                  href="https://drive.google.com/file/d/168epFS9UC1vwUFO7xqG9f6fjqdcHxXKv/view?usp=sharing"
+                  target="_blank"
+                >
+                  View Full Resume
+                  <span
+                    class="transition-all duration-150 group-hover:-translate-y-1 group-hover:translate-x-1"
+                  >
+                    ↗
+                  </span>
+                </a>
+              </section>
+
+              <section id="projects" class="flex flex-col gap-y-4 relative">
+                <div class="lg:hidden sticky top-0 leading-none py-6 bg-blur z-50">
+                  <h3 class="text-slate-300 text-balance tracking-wider font-bold relative z-40">
+                    PROJECTS
+                  </h3>
+                  <div class="absolute-center bg-blur w-[120%] h-full backdrop-blur-sm"></div>
+                </div>
+                <div class="flex flex-col gap-y-14 md:gap-y-20">
+                  <div class="group relative w-full h-auto">
+                    <div
+                      class="flex flex-col-reverse md:flex-row gap-6 md:gap-[1.5rem] lg:gap-0 items-start w-full h-auto pointer-events-auto"
+                    >
+                      <div class="min-w-36">
+                        <img
+                          class="ring-2 ring-gray-500 group-hover:ring-gray-300 rounded max-w-[11.5rem] lg:max-w-[7.5rem] min-h-24 lg:min-h-16 h-auto object-cover object-center"
+                          src="images/project-5.png"
+                          alt="todo"
+                        />
+                      </div>
+                      <div class="flex flex-col gap-2 flex-1">
+                        <a
+                          href="https://lasean.com/"
+                          target="_blank"
+                          class="text-lg leading-none font-bold w-fit hover:text-teal-500 lg:hover:text-slate-300"
+                          >LTS</a
+                        >
+                        <p class="text-neutral-400 text-base leading-7">
+                          A personal blog about the owner of BGDY, where he shares his insights,
+                          hobbies, professional journey, and more.
+                        </p>
+                        <div
+                          class="flex flex-row gap-4 lg:gap-8 flex-wrap text-sm text-center text-teal-500 font-bold mt-2"
+                        >
+                          <span>Hugo</span>
+                          <span>Tailwind</span>
+                          <span>JavaScript</span>
+                        </div>
+                      </div>
+                    </div>
+
                     <a
                       target="_blank"
-                      href="https://www.bgdy.com"
-                      class="text-lg leading-none font-bold w-fit"
-                    >
-                      Front-End Developer · BGDY
-                    </a>
-                    <p class="text-neutral-400 text-base leading-7">
-                      As part of a startup company offering multiple services, web application
-                      development was one of my responsibilities. I collaborated with designers, a
-                      project manager, and backend developers to create exceptional web
-                      applications.
-                    </p>
+                      href="https://lasean.com/"
+                      class="opacity-0 group-hover:opacity-100 absolute-center w-[calc(100%+68px)] h-[calc(100%+48px)] z-0 ring-1 ring-teal-800 bg-transparent rounded-md hidden lg:block"
+                    ></a>
+                  </div>
+                  <div class="group relative w-full h-auto">
                     <div
-                      class="flex flex-row gap-4 lg:gap-8 flex-wrap text-sm text-center text-teal-500 font-bold mt-2"
+                      class="flex flex-col-reverse md:flex-row gap-6 md:gap-[1.5rem] lg:gap-0 items-start w-full h-auto pointer-events-auto"
                     >
-                      <span>HTML</span>
-                      <span>JavaScript</span>
-                      <span>Sveltekit</span>
-                      <span>Tailwind</span>
-                      <span>Go</span>
-                      <span>Hugo</span>
+                      <div class="min-w-36">
+                        <img
+                          class="ring-2 ring-gray-500 group-hover:ring-gray-300 rounded max-w-[11.5rem] lg:max-w-[7.5rem] min-h-24 lg:min-h-16 h-auto object-cover object-center"
+                          src="images/project-3.png"
+                          alt="todo"
+                        />
+                      </div>
+                      <div class="flex flex-col gap-2 flex-1">
+                        <a
+                          href="https://kamisama100.github.io/wisebrands/"
+                          target="_blank"
+                          class="text-lg leading-none font-bold w-fit hover:text-teal-500 lg:hover:text-slate-300"
+                          >Wisebrands</a
+                        >
+                        <p class="text-neutral-400 text-base leading-7">
+                          A website that sells premium domains.
+                        </p>
+                        <div
+                          class="flex flex-row gap-4 lg:gap-8 flex-wrap text-sm text-center text-teal-500 font-bold mt-2"
+                        >
+                          <span>JavaScript</span>
+                          <span>Tailwind</span>
+                        </div>
+                      </div>
                     </div>
+
+                    <a
+                      target="_blank"
+                      href="https://kamisama100.github.io/wisebrands/"
+                      class="opacity-0 group-hover:opacity-100 absolute-center w-[calc(100%+68px)] h-[calc(100%+48px)] z-0 ring-1 ring-teal-800 bg-transparent rounded-md hidden lg:block"
+                    ></a>
+                  </div>
+                  <div class="group relative w-full h-auto">
+                    <div
+                      class="flex flex-col-reverse md:flex-row gap-6 md:gap-[1.5rem] lg:gap-0 items-start w-full h-auto pointer-events-auto"
+                    >
+                      <div class="min-w-36">
+                        <img
+                          class="ring-2 ring-gray-500 group-hover:ring-gray-300 rounded max-w-[11.5rem] lg:max-w-[7.5rem] min-h-24 lg:min-h-16 h-auto object-cover object-center"
+                          src="images/project-4.png"
+                          alt="todo"
+                        />
+                      </div>
+                      <div class="flex flex-col gap-2 flex-1">
+                        <a
+                          href="https://graduated.com/"
+                          target="_blank"
+                          class="text-lg leading-none font-bold w-fit hover:text-teal-500 lg:hover:text-slate-300"
+                          >Graduated</a
+                        >
+                        <p class="text-neutral-400 text-base leading-7">
+                          A website that creates paid video courses on topics of financial
+                          independence and new skill acquisition.
+                        </p>
+                        <div
+                          class="flex flex-row gap-4 lg:gap-8 flex-wrap text-sm text-center text-teal-500 font-bold mt-2"
+                        >
+                          <span>Hugo CMS</span>
+                          <span>JavaScript</span>
+                          <span>Tailwind</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a
+                      target="_blank"
+                      href="https://graduated.com/"
+                      class="opacity-0 group-hover:opacity-100 absolute-center w-[calc(100%+68px)] h-[calc(100%+48px)] z-0 ring-1 ring-teal-800 bg-transparent rounded-md hidden lg:block"
+                    ></a>
+                  </div>
+                  <div class="group relative w-full h-auto">
+                    <div
+                      class="flex flex-col-reverse md:flex-row gap-6 md:gap-[1.5rem] lg:gap-0 items-start w-full h-auto pointer-events-auto"
+                    >
+                      <div class="min-w-36">
+                        <img
+                          class="ring-2 ring-gray-500 group-hover:ring-gray-300 rounded max-w-[11.5rem] lg:max-w-[7.5rem] min-h-24 lg:min-h-16 h-auto object-cover object-center"
+                          src="images/project-1.png"
+                          alt="todo"
+                        />
+                      </div>
+                      <div class="flex flex-col gap-2 flex-1">
+                        <a
+                          href="https://kamisama100.github.io/todo-app/"
+                          target="_blank"
+                          class="text-lg leading-none font-bold w-fit hover:text-teal-500 lg:hover:text-slate-300"
+                          >TODO App</a
+                        >
+                        <p class="text-neutral-400 text-base leading-7">
+                          A simple todo app that allows one to add, mark as done, and delete tasks.
+                        </p>
+                        <div
+                          class="flex flex-row gap-4 lg:gap-8 flex-wrap text-sm text-center text-teal-500 font-bold mt-2"
+                        >
+                          <span>TypeScript</span>
+                          <span>React</span>
+                          <span>Tailwind</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a
+                      target="_blank"
+                      href="https://kamisama100.github.io/todo-app/"
+                      class="opacity-0 group-hover:opacity-100 absolute-center w-[calc(100%+68px)] h-[calc(100%+48px)] z-0 ring-1 ring-teal-800 bg-transparent rounded-md hidden lg:block"
+                    ></a>
+                  </div>
+                  <div class="group relative w-full h-auto">
+                    <div
+                      class="flex flex-col-reverse md:flex-row gap-6 md:gap-[1.5rem] lg:gap-0 items-start w-full h-auto pointer-events-auto"
+                    >
+                      <div class="min-w-36">
+                        <img
+                          class="ring-2 ring-gray-500 group-hover:ring-gray-300 rounded max-w-[11.5rem] lg:max-w-[7.5rem] min-h-24 lg:min-h-16 h-auto object-cover object-center"
+                          src="images/project-2.png"
+                          alt="build"
+                        />
+                      </div>
+                      <div class="flex flex-col gap-2 flex-1">
+                        <a
+                          href="https://kamisama100.github.io/landing-page/"
+                          target="_blank"
+                          class="text-lg leading-none font-bold w-fit hover:text-teal-500 lg:hover:text-slate-300"
+                          >Build A Brand</a
+                        >
+                        <p class="text-neutral-400 text-base leading-7">
+                          A simple landing page I made a few years ago.
+                        </p>
+                        <div
+                          class="flex flex-row gap-4 lg:gap-8 flex-wrap text-sm text-center text-teal-500 font-bold mt-2"
+                        >
+                          <span>React</span>
+                          <span>Tailwind</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a
+                      target="_blank"
+                      href="https://kamisama100.github.io/landing-page/"
+                      class="opacity-0 group-hover:opacity-100 absolute-center w-[calc(100%+68px)] h-[calc(100%+48px)] z-0 ring-1 ring-teal-800 bg-transparent rounded-md hidden lg:block"
+                    ></a>
                   </div>
                 </div>
 
                 <a
+                  class="group flex flex-row gap-2 items-center mt-10 font-bold tracking-wide w-fit hover:text-teal-500"
+                  href="https://github.com/kamisama100"
                   target="_blank"
-                  href="https://www.bgdy.com"
-                  class="opacity-0 group-hover:opacity-100 absolute-center w-[calc(100%+68px)] h-[calc(100%+48px)] z-0 ring-1 ring-teal-800 bg-transparent rounded-md hidden lg:block"
-                ></a>
-              </div>
-            </section>
-
-            <section id="projects" class="flex flex-col gap-y-4 relative">
-              <div class="lg:hidden sticky top-0 leading-none py-6 bg-blur z-50">
-                <h3 class="text-slate-300 text-balance tracking-wider font-bold relative z-40">
-                  PROJECTS
-                </h3>
-                <div class="absolute-center bg-blur w-full h-full backdrop-blur-sm"></div>
-              </div>
-              <div class="flex flex-col gap-y-20">
-                <div class="group relative w-full h-auto">
-                  <div
-                    class="flex flex-row gap-[1.5rem] lg:gap-0 items-start w-full h-auto pointer-events-auto"
-                  >
-                    <div class="min-w-36">
-                      <img
-                        class="ring-2 ring-gray-500 group-hover:ring-gray-300 rounded max-w-[11.5rem] lg:max-w-[7.5rem] min-h-24 lg:min-h-16 h-auto object-cover object-center"
-                        src="images/project-1.png"
-                        alt="todo"
-                      />
-                    </div>
-                    <div class="flex flex-col gap-2 flex-1">
-                      <a
-                        href="https://kamisama100.github.io/todo-app/"
-                        target="_blank"
-                        class="text-lg leading-none font-bold w-fit"
-                        >TODO App</a
-                      >
-                      <p class="text-neutral-400 text-base leading-7">
-                        A simple todo app that allows one to add, mark as done, and delete tasks.
-                      </p>
-                      <div
-                        class="flex flex-row gap-4 lg:gap-8 flex-wrap text-sm text-center text-teal-500 font-bold mt-2"
-                      >
-                        <span>TypeScript</span>
-                        <span>React</span>
-                        <span>Tailwind</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <a
-                    target="_blank"
-                    href="https://kamisama100.github.io/todo-app/"
-                    class="opacity-0 group-hover:opacity-100 absolute-center w-[calc(100%+68px)] h-[calc(100%+48px)] z-0 ring-1 ring-teal-800 bg-transparent rounded-md hidden lg:block"
-                  ></a>
-                </div>
-                <div class="group relative w-full h-auto">
-                  <div
-                    class="flex flex-row gap-[1.5rem] lg:gap-0 items-start w-full h-auto pointer-events-auto"
-                  >
-                    <div class="min-w-36">
-                      <img
-                        class="ring-2 ring-gray-500 group-hover:ring-gray-300 rounded max-w-[11.5rem] lg:max-w-[7.5rem] min-h-24 lg:min-h-16 h-auto object-cover object-center"
-                        src="images/project-2.png"
-                        alt="brand"
-                      />
-                    </div>
-                    <div class="flex flex-col gap-2 flex-1">
-                      <a
-                        href="https://kamisama100.github.io/todo-app/"
-                        target="_blank"
-                        class="text-lg leading-none font-bold w-fit"
-                        >Build A Brand</a
-                      >
-                      <p class="text-neutral-400 text-base leading-7">
-                        A simple landing page I made a few years ago.
-                      </p>
-                      <div
-                        class="flex flex-row gap-4 lg:gap-8 flex-wrap text-sm text-center text-teal-500 font-bold mt-2"
-                      >
-                        <span>React</span>
-                        <span>Tailwind</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <a
-                    target="_blank"
-                    href="https://kamisama100.github.io/todo-app/"
-                    class="opacity-0 group-hover:opacity-100 absolute-center w-[calc(100%+68px)] h-[calc(100%+48px)] z-0 ring-1 ring-teal-800 bg-transparent rounded-md hidden lg:block"
-                  ></a>
-                </div>
-              </div>
-            </section>
-
-            <footer>
-              <p class="text-sm tracking-wider font-light text-neutral-400">
-                Built with <span class="text-slate-300 font-bold">Vanilla JS</span> and
-                <span class="text-slate-300 font-bold">Tailwind</span> by
-                <span class="text-slate-300 font-bold">Lee.</span>
-              </p>
-            </footer>
-          </div>
-        </div>
-      </div>
-    </main>
-    <!--
-    <main class="px-40 pb-20 max-w-[1620px] mx-auto">
-      <div class="flex flex-col justify-center w-[80%] mx-auto">
-        <div class="flex items-center justify-center w-full h-svh lg:h-lvh">
-          <div class="flex flex-col gap-8 text-animation">
-            <div class="text-[2.5rem] font-bold w-fit">Hello, I'm Lee.</div>
-            <p class="text-[1.5rem] leading-[2.5rem] font-medium tracking-wide text-justify">
-              I'm a Junior Front-End Developer with over a year of professional experience. I love
-              transforming Figma designs into functional, working code. Throughout my career, I've
-              worked with various libraries and frameworks. However, my primary focus has been on
-              vanilla <span class="font-bold">JS</span> and
-              <span class="font-bold">TailwindCSS</span>. I also enjoy playing guitar and gaming.
-            </p>
-          </div>
-        </div>
-        <div class="">
-          <div class="flex flex-col gap-12">
-            <div class="text-[2.5rem] font-bold w-fit fade-in">Projects</div>
-
-            <div class="flex flex-col gap-20">
-              <div
-                class="relative group shadow-lg w-full h-fit overflow-hidden rounded-xl slide"
-                data-slide="left"
-              >
-                <img
-                  class="rounded-xl w-full h-auto max-w-full transition duration-200 ease-in-out bg-transparent group-hover:scale-110"
-                  height="400"
-                  src="images/project-1.png"
-                  alt="project"
-                />
-                <div
-                  class="opacity-0 transition-opacity duration-200 group-hover:opacity-100 ease-in-out absolute top-0 left-0 bottom-0 right-0 m-auto w-full h-full rounded-xl overlay"
                 >
-                  <div
-                    class="text-white flex items-center justify-center w-full h-full relative py-10 px-20"
+                  View Full Project Archive
+                  <span
+                    class="transition-all duration-150 group-hover:-translate-y-1 group-hover:translate-x-1"
                   >
-                    <div class="flex flex-col h-full justify-between items-center">
-                      <span class="text-5xl font-semibold">TODO App</span>
-                      <p class="text-3xl font-medium text-justify">
-                        A Todo List Application built with React, TypeScript, and Tailwind.
-                      </p>
-                      <div
-                        class="flex flex-row items-center gap-10 text-black font-medium *:flex *:items-center *:justify-center *:bg-white *:rounded *:w-[180px] *:h-10"
-                      >
-                        <a target="_blank" href="https://kamisama100.github.io/todo-app/"
-                          >Try App</a
-                        >
-                        <a target="_blank" href="https://github.com/kamisama100/todo-app"
-                          >Go to Repo</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="relative group shadow-lg w-full h-fit overflow-hidden rounded-xl slide"
-                data-slide="right"
-              >
-                <img
-                  class="rounded-xl w-full h-auto max-w-full transition duration-200 ease-in-out bg-transparent group-hover:scale-110"
-                  height="400"
-                  src="images/project-1.png"
-                  alt="project"
-                />
-                <div
-                  class="opacity-0 transition-opacity duration-200 group-hover:opacity-100 ease-in-out absolute top-0 left-0 bottom-0 right-0 m-auto w-full h-full rounded-xl overlay"
-                >
-                  <div
-                    class="text-white flex items-center justify-center w-full h-full relative py-10 px-20"
-                  >
-                    <div class="flex flex-col h-full justify-between items-center">
-                      <span class="text-5xl font-semibold">TODO App</span>
-                      <p class="text-3xl font-medium text-justify">
-                        A Todo List Application built with React, TypeScript, and Tailwind.
-                      </p>
-                      <div
-                        class="flex flex-row items-center gap-10 text-black font-medium *:flex *:items-center *:justify-center *:bg-white *:rounded *:w-[180px] *:h-10"
-                      >
-                        <a href="https://kamisama100.github.io/todo-app/">Try App</a>
-                        <a href="https://github.com/kamisama100/todo-app">Go to Repo</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                    ↗
+                  </span>
+                </a>
+              </section>
+
+              <footer>
+                <p class="text-sm tracking-wider font-light text-neutral-400">
+                  Built with <span class="text-slate-300 font-bold">Vanilla JS</span> and
+                  <span class="text-slate-300 font-bold">Tailwind</span> by
+                  <span class="text-slate-300 font-bold">Lee.</span>
+                </p>
+              </footer>
             </div>
           </div>
         </div>
-      </div>
-    </main>
-    -->
+      </main>
+      <div id="mouse-follower"></div>
+    </div>
 
     <script src="scripts/script.js"></script>
   </body>

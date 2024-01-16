@@ -18,7 +18,7 @@ const addStyleToButton = () => {
           .querySelector("div")
           .classList.replace("group-hover:bg-slate-200", "bg-slate-200")
       })
-    } else if (visibleHeight >= 900 && visibleHeight < 1200) {
+    } else if (visibleHeight >= 900 && visibleHeight < 1300) {
       sectionBtns.forEach((btn) => {
         btn.classList.remove("text-slate-300")
         btn.querySelector("div").classList.replace("w-16", "group-hover:w-16")
@@ -30,7 +30,7 @@ const addStyleToButton = () => {
           .querySelector("div")
           .classList.replace("group-hover:bg-slate-200", "bg-slate-200")
       })
-    } else if (visibleHeight >= 1200) {
+    } else if (visibleHeight >= 1300) {
       sectionBtns.forEach((btn) => {
         btn.classList.remove("text-slate-300")
         btn.querySelector("div").classList.replace("w-16", "group-hover:w-16")
@@ -54,3 +54,22 @@ const addStyleToButton = () => {
 }
 
 addStyleToButton()
+
+document.addEventListener("DOMContentLoaded", function () {
+  const mouseFollower = document.getElementById("mouse-follower")
+  const followerSize = 500
+  const followOffset = 250
+
+  document.addEventListener("mousemove", function (e) {
+    const x = e.clientX + window.scrollX
+    const y = e.clientY + window.scrollY
+
+    const xOffset = x - followOffset
+    const yOffset = y - followOffset
+
+    mouseFollower.style.width = followerSize + "px"
+    mouseFollower.style.height = followerSize + "px"
+    mouseFollower.style.left = xOffset + "px"
+    mouseFollower.style.top = yOffset + "px"
+  })
+})
