@@ -640,8 +640,8 @@ video {
   width: 120%;
 }
 
-.w-\[50\%\]{
-  width: 50%;
+.w-\[70\%\]{
+  width: 70%;
 }
 
 .w-\[calc\(100\%\+68px\)\]{
@@ -1078,10 +1078,6 @@ body {
 }
 
 @media (min-width: 768px){
-  .md\:block{
-    display: block;
-  }
-
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1140,6 +1136,10 @@ body {
 
   .lg\:min-h-16{
     min-height: 4rem;
+  }
+
+  .lg\:w-\[50\%\]{
+    width: 50%;
   }
 
   .lg\:max-w-\[7\.5rem\]{
