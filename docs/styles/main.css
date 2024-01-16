@@ -636,6 +636,10 @@ video {
   width: 2rem;
 }
 
+.w-\[120\%\]{
+  width: 120%;
+}
+
 .w-\[50\%\]{
   width: 50%;
 }
@@ -651,14 +655,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[110\%\]{
-  width: 110%;
-}
-
-.w-\[120\%\]{
-  width: 120%;
 }
 
 .min-w-28{
@@ -1082,6 +1078,10 @@ body {
 }
 
 @media (min-width: 768px){
+  .md\:block{
+    display: block;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }

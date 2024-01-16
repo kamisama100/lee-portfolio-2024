@@ -72,4 +72,16 @@ document.addEventListener("DOMContentLoaded", function () {
     mouseFollower.style.left = xOffset + "px"
     mouseFollower.style.top = yOffset + "px"
   })
+
+  function toggleComponentForDevice() {
+    var isMobileOrTablet = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    )
+
+    if (isMobileOrTablet) {
+      mouseFollower.style.display = "none"
+    }
+  }
+
+  toggleComponentForDevice()
 })
