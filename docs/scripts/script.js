@@ -85,3 +85,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   toggleComponentForDevice()
 })
+
+const togglePrevProjects = (element) => {
+  element.classList.toggle("hidden")
+
+  const mouseFollower = document.getElementById("mouse-follower")
+  mouseFollower.classList.toggle("hidden")
+  document.body.classList.toggle("overflow-y-hidden")
+}

@@ -6,6 +6,7 @@
     <title>2024 Portfolio</title>
 
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/portal.css" />
   </head>
   <body>
     <div class="relative h-fit overflow-y-clip">
@@ -385,18 +386,94 @@
                 </a>
               </section>
 
-              <footer>
+              <footer class="relative w-full h-20">
                 <p class="text-sm tracking-wider font-light text-neutral-400">
                   Built with <span class="text-slate-300 font-bold">Vanilla JS</span> and
                   <span class="text-slate-300 font-bold">Tailwind</span> by
                   <span class="text-slate-300 font-bold">Lee.</span>
                 </p>
+
+                <button
+                  onclick="togglePrevProjects(document.querySelector('#prev-projects'))"
+                  class="bounce absolute -bottom-8 lg:-bottom-14 -right-0 xl:-right-24 size-14 lg:size-16"
+                >
+                  <img src="images/teleporter.png" alt="teleporter" />
+                </button>
               </footer>
             </div>
           </div>
         </div>
       </main>
       <div id="mouse-follower"></div>
+    </div>
+
+    <div id="prev-projects" class="hidden fixed top-0 left-0 w-full h-screen backdrop-blur-sm z-50">
+      <button class="absolute left-0 top-0 right-0 bottom-0 m-auto w-full h-full"></button>
+
+      <div class="relative h-full">
+        <div class="portal-to-tomorrow h-full">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div
+          class="flex flex-col gap-0 md:gap-6 items-center justify-center max-w-[400px] card-container absolute top-[60%] md:top-[45%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+        >
+          <div>
+            <p
+              class="text-3xl md:text-[2.4rem] md:leading-[2.5rem] font-bold text-justify text-slate-700"
+            >
+              Going back to the old times? Hop in.
+            </p>
+          </div>
+          <div class="flex flex-col md:flex-row gap-4 *:w-[224px] *:h-32">
+            <a
+              class="relative group"
+              href="https://kamisama100.github.io/lee-portfolio/"
+              target="_blank"
+            >
+              <img
+                class="border-[#827a7a] border-[2.5px] rounded-md w-full h-full overflow-hidden"
+                src="images/portfolio-1.png"
+                alt="portfolio 1"
+              />
+
+              <span
+                class="opacity-0 group-hover:opacity-100 group-hover:bg-[#8080807d] group-hover:backdrop-blur-sm flex items-center justify-center w-full h-full absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-4xl transition-all duration-150 ease-in-out delay-0"
+              >
+                v1
+              </span>
+            </a>
+            <a
+              class="relative group"
+              href="https://kamisama100.github.io/lee-portfolio-2/"
+              target="_blank"
+            >
+              <img
+                class="border-[#827a7a] border-[2.5px] rounded-md w-full h-full overflow-hidden"
+                src="images/portfolio-2.png"
+                alt="portfolio 2"
+              />
+
+              <span
+                class="opacity-0 group-hover:opacity-100 group-hover:bg-[#8080807d] group-hover:backdrop-blur-sm flex items-center justify-center w-full h-full absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-4xl transition-all duration-150 ease-in-out delay-0"
+              >
+                v2
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <button
+          onclick="togglePrevProjects(document.querySelector('#prev-projects'))"
+          class="size-8 absolute top-8 right-8"
+        >
+          <img src="images/icons/close.svg" alt="close" />
+        </button>
+      </div>
     </div>
 
     <script src="scripts/script.js"></script>
