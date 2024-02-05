@@ -578,6 +578,10 @@ video {
   bottom: 0px;
 }
 
+.bottom-4{
+  bottom: 1rem;
+}
+
 .left-0{
   left: 0px;
 }
@@ -612,14 +616,6 @@ video {
 
 .top-\[60\%\]{
   top: 60%;
-}
-
-.bottom-8{
-  bottom: 2rem;
-}
-
-.bottom-4{
-  bottom: 1rem;
 }
 
 .z-0{
@@ -847,6 +843,10 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-clip{
+  overflow: clip;
 }
 
 .overflow-x-clip{
@@ -1186,7 +1186,6 @@ body {
   }
 
   body {
-    overflow-x: hidden;
     scroll-behavior: smooth !important;
   }
 }
